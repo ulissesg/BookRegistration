@@ -15,8 +15,22 @@ public class Author {
     String authorCpf;
     
     public void showAuthorInfo(){
-        System.out.println("Author Name: " + this.authorName + "\n"
-        + "Author Email: " + this.authorEmail + "\n"
-        + "Author CPF: " + this.authorCpf + "\n");
+        if (this.verifyAuthor() == true){
+            System.out.println("Author Name: " + this.authorName + "\n"
+            + "Author Email: " + this.authorEmail + "\n"
+            + "Author CPF: " + this.authorCpf + "\n");
+        }
+        else{
+            System.err.println("there`s no author");
+        }
+        
+    }
+    
+     public boolean verifyAuthor (){
+        if (this.authorName == null && this.authorEmail == null 
+                && this.authorCpf == null){
+            return false;
+        }
+        return true;
     }
 }
