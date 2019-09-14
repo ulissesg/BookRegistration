@@ -10,10 +10,10 @@ package bookregistration;
  * @author ulisses
  */
 public class Books {
-    String name;
-    String description;
-    double value;
-    String isbn;
+    private String name;
+    private String description;
+    private double value;
+    private String isbn;
     Author author = new Author();
     
     public void showInfo(){
@@ -23,7 +23,51 @@ public class Books {
         + "ISBN: " + this.isbn);
     }
     
-    public void priceAdjustment (double adjustment){
-        this.value += this.value * adjustment;
+    public boolean priceAdjustment (double adjustment){
+        if (adjustment <= 30){
+            this.value += this.value * adjustment;
+            return true;
+        }  
+        return false;
     }   
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public double getValue() {
+        return value;
+    }
+
+    public void setValue(double value) {
+        this.value = value;
+    }
+
+    public String getIsbn() {
+        return isbn;
+    }
+
+    public void setIsbn(String isbn) {
+        this.isbn = isbn;
+    }
+
+    public Author getAuthor() {
+        return author;
+    }
+
+    public void setAuthor(Author author) {
+        this.author = author;
+    }
 }

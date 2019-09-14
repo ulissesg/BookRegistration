@@ -10,9 +10,9 @@ package bookregistration;
  * @author ulisses
  */
 public class Author {
-    String authorName;
-    String authorEmail;
-    String authorCpf;
+    private String authorName;
+    private String authorEmail;
+    private String authorCpf;
     
     public void showAuthorInfo(){
         if (this.verifyAuthor() == true){
@@ -32,5 +32,29 @@ public class Author {
             return false;
         }
         return true;
+    }
+
+    public String getAuthorName() {
+        return authorName;
+    }
+
+    public void setAuthorName(String authorName) {
+        this.authorName = authorName;
+    }
+
+    public String getAuthorEmail() {
+        return authorEmail;
+    }
+
+    public void setAuthorEmail(String authorEmail) {
+        this.authorEmail = authorEmail;
+    }
+
+    public String getAuthorCpf() {
+        return authorCpf;
+    }
+
+    public void setAuthorCpf(String authorCpf) {
+        this.authorCpf = authorCpf;
     }
 }
