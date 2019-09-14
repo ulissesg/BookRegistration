@@ -13,14 +13,14 @@ public class Books {
     private String name;
     private String description;
     private double value;
-    private String isbn;
     Author author = new Author();
     
+    public Books(){
+        this.name = "xxxxxxxxxxxxxxxx";
+        this.description = "xxxxxxxxxxxxxxxxxxx";
+    }
+    
     public void showInfo(){
-        System.out.println("Name: " + this.name + "\n"
-        + "Description: " + this.description + "\n"
-        + "Value: " + this.value + "\n"
-        + "ISBN: " + this.isbn);
     }
     
     public boolean priceAdjustment (double adjustment){
@@ -53,14 +53,6 @@ public class Books {
 
     public void setValue(double value) {
         this.value = value;
-    }
-
-    public String getIsbn() {
-        return isbn;
-    }
-
-    public void setIsbn(String isbn) {
-        this.isbn = isbn;
     }
 
     public Author getAuthor() {

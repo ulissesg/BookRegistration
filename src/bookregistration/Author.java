@@ -13,6 +13,12 @@ public class Author {
     private String authorName;
     private String authorEmail;
     private String authorCpf;
+
+    public Author() {
+        this.authorName = "xxxxxxxxxxxxxx";
+        this.authorEmail = "example@gmail.com";
+        this.authorCpf =  "xxx.xxx.xxx-xx";
+    }
     
     public void showAuthorInfo(){
         if (this.verifyAuthor() == true){
@@ -21,7 +27,7 @@ public class Author {
             + "Author CPF: " + this.authorCpf + "\n");
         }
         else{
-            System.err.println("there`s no author");
+            System.err.println("There`s no author");
         }
         
     }
