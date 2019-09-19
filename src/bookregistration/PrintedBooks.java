@@ -9,18 +9,14 @@ public class PrintedBooks extends Books{
     private double width;
     private double depth;
     private double weight;
-    private String isbn;
-    
-    public PrintedBooks(){
-        this.isbn = "000-0-00-000000-0";
-    }
     
     @Override
     public void showInfo(){
         System.out.println("Name: " + this.getName() + "\n"
         + "Description: " + this.getDescription() + "\n"
         + "Value: " + this.getValue() + "\n"
-        + "ISBN: " + this.getIsbn() + "\n"
+        + "ISBN - 13: " + this.getIsbn13() + "\n"
+        + "ISBN - 10: " + this.getIsbn10() + "\n"
         + "Width: " + this.getWidth() + "\n"
         + "Height: " + this.getHeight() + "\n"
         + "Depth: " + this.getDepth() + "\n"
@@ -57,13 +53,5 @@ public class PrintedBooks extends Books{
 
     public void setWeight(double weight) {
         this.weight = weight;
-    }
-    
-    public String getIsbn() {
-        return isbn;
-    }
-
-    public void setIsbn(String isbn) {
-        this.isbn = isbn;
     }
 }

@@ -22,7 +22,7 @@ public class BookRegistration {
         book1.setName("Harry Potter and the deathly Hallows");
         book1.setDescription("is a fantasy novel written by British author J. K. Rowling and the seventh and final novel of the Harry Potter series.");
         book1.setValue(240.5);
-        book1.setIsbn("5679238567946"); 
+        book1.setIsbn13("5679238567946"); 
         book1.setDepth(6);
         book1.setHeight(25);
         book1.setWidth(15);

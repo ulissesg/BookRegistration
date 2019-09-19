@@ -24,6 +24,8 @@ public class EBooks extends Books {
         + "Description: " + this.getDescription() + "\n"
         + "Value: " + this.getValue() + "\n"
         + "ASIN: " + this.getAsin() + "\n"
+        + "ISBN - 13: " + this.getIsbn13() + "\n"
+        + "ISBN - 10: " + this.getIsbn10() + "\n"
         + "Vocabulary Tips: " + this.isVocabularyTips() + "\n"
         + "File Size: " + this.getFileSize());
     }
